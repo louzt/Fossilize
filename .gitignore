@@ -7,3 +7,21 @@
 *.iml
 out
 CMakeUserPresets.json
+
+# LZT: build outputs not covered by Valve's stock
+/build
+/build-*/
+/Testing/
+/Testing
+Testing/Temporary/
+
+# LZT: tooling caches
+.cache/
+.clangd/
+
+# LZT: compile database (symlink a build/compile_commands.json)
+compile_commands.json
+
+# LZT: Fossilize runtime cache files
+*.foz
+*.foz.tmp
